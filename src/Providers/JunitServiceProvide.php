@@ -6,7 +6,7 @@
  * Time: 19:55:43
  */
 
-namespace Sabo\JunitLaravel;
+namespace Sabo\JunitLaravel\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
@@ -18,7 +18,7 @@ class JunitServiceProvide extends ServiceProvider
         $this->registerRoutes();
 
         $this->loadViewsFrom(
-            __DIR__.'/../resources/views', 'junit'
+            __DIR__.'/../../resources/views', 'junit'
         );
     }
 
@@ -33,7 +33,7 @@ class JunitServiceProvide extends ServiceProvider
     private function registerRoutes()
     {
         Route::group($this->routeConfiguration(), function () {
-            $this->loadRoutesFrom(__DIR__.'/Http/routes.php');
+            $this->loadRoutesFrom(__DIR__.'/../Http/routes.php');
         });
     }
 }
