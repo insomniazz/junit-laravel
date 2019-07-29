@@ -11,7 +11,7 @@ namespace Sabo\JunitLaravel\Providers;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
-class JunitServiceProvide extends ServiceProvider
+class JunitServiceProvider extends ServiceProvider
 {
     public function boot()
     {
