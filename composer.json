@@ -13,5 +13,12 @@
         "psr-4": {
             "Sabo\\JunitLaravel\\": "src"
         }
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "Sabo\\JunitLaravel\\Providers\\JunitServiceProvider"
+            ]
+        }
     }
 }
